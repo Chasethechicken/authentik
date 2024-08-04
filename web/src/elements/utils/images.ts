@@ -9,5 +9,5 @@ export function themeImage(rawPath: string) {
             ? UiThemeEnum.Light
             : UiThemeEnum.Dark;
     }
-    return rawPath.replace("%(theme)s", enabledTheme);
+    return rawPath.replace("%(theme)s", enabledTheme, "g");
 }
